@@ -1,0 +1,41 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 2fr 1fr;
+
+  grid-template-areas: 
+    "header header header"
+    "main main puchunguito"
+    "footer footer footer";
+
+  height: 100vh;
+  background-color: darkslateblue;
+}
+
+.item {
+  text-align: center;
+}
+
+.header {
+  grid-area: header;
+  background-color: lightblue;
+}
+
+.main {
+  grid-area: main;
+  background-color: lightcoral;
+}
+
+.sidebar {
+  grid-area: puchunguito;
+  background-color: lightgreen;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: lightsalmon;
+}
